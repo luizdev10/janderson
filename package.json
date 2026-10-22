@@ -3,13 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://luizdev10.github.io/emitattoo",
+  "homepage": "https://luizdev10.github.io/janderson",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "oxlint",
     "preview": "vite preview",
-    "predeploy": "vite build --base=/emitattoo/ && node -e \"require('fs').copyFileSync('dist/index.html', 'dist/404.html')\"",
+    "predeploy": "vite build --base=/janderson/ && node -e \"require('fs').copyFileSync('dist/index.html', 'dist/404.html')\"",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
