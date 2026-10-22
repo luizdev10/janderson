@@ -1,4 +1,4 @@
-import fotoOrcamento from "../assets/img/trabalho6.webp";
+import fotoOrcamento from "../assets/img/foto2.webp";
 import Reveal from "./reveal.jsx";
 
 function Orcamento() {
@@ -19,7 +19,7 @@ function Orcamento() {
                         />
                         <img
                             src={fotoOrcamento}
-                            alt="Detalhe de tatuagem fineline em mandala, mostrando o nível de precisão do traço"
+                            alt="Detalhe de tatuagem blackwork, mostrando o nível de precisão do traço"
                             className="relative aspect-[3/4] w-full rounded-sm object-cover"
                         />
                     </figure>
@@ -30,14 +30,13 @@ function Orcamento() {
                             com o tamanho, a complexidade do desenho e o local do corpo.
                         </p>
                         <p className="border-l-2 border-solid border-acento py-1 pl-5 text-2xl font-semibold leading-snug text-papel">
-                            Fineline pede tempo e precisão, por isso prefiro combinar o orçamento numa conversa a
-                            arriscar um número que não valorize o seu desenho.
+                            Realismo, fine line e blackwork pedem tempo e precisão, por isso prefiro combinar o
+                            orçamento numa conversa a arriscar um número que não valorize o seu desenho.
                         </p>
-                        <p>Para piercing, o valor já inclui a joia inicial indicada para o procedimento escolhido.</p>
 
                         <a
                             href="#contato"
-                            className="mt-4 w-fit rounded-full bg-acento px-7 py-3.5 font-medium text-papel shadow-[0_8px_30px_-8px_var(--color-acento)] transition-all duration-500 ease-in-out hover:bg-acento-luz hover:text-tinta"
+                            className="mt-4 w-fit rounded-full bg-acento px-7 py-3.5 font-medium text-tinta shadow-[0_8px_30px_-8px_var(--color-acento)] transition-all duration-500 ease-in-out hover:scale-[1.04] hover:bg-acento-luz active:scale-95"
                         >
                             Pedir orçamento
                         </a>

@@ -1,9 +1,9 @@
-import fotoSobre from "../assets/img/fotosobre-emi.webp";
+import fotoSobre from "../assets/img/fotoprocesso.webp";
 import Reveal from "./reveal.jsx";
 
 const paragrafos = [
-    "Desde 2019, o estúdio EmiTattoo se dedica à tatuagem fineline em Crato - CE, unindo traço fino e detalhado a composições autorais.",
-    "Além da tatuagem, o espaço também oferece piercing, sempre com atenção à higiene e ao conforto durante todo o atendimento.",
+    "Janderson é tatuador especialista em realismo, fine line e blackwork, com projetos autorais exclusivos em Crato - Região do Cariri.",
+    "Premiado na Expo Tattoo Cariri 2025, une técnica apurada a composições pensadas sob medida para cada cliente.",
 ];
 
 const destaque =
@@ -17,8 +17,8 @@ function Sobre() {
         <section id="sobre" className="scroll-mt-16 w-full bg-papel px-4 py-20 text-tinta sm:px-6 md:py-28">
             <div className="mx-auto max-w-6xl">
                 <Reveal>
-                    <h2 className="font-display text-5xl font-bold lowercase leading-[1.05] text-acento md:text-7xl">
-                        sobre a emitattoo
+                    <h2 className="font-display text-5xl font-bold lowercase leading-[1.05] text-tinta md:text-7xl">
+                        sobre o janderson
                     </h2>
                 </Reveal>
 
@@ -27,7 +27,7 @@ function Sobre() {
                         {paragrafos.map((texto) => (
                             <p key={texto}>{texto}</p>
                         ))}
-                        <p className="border-l-2 border-solid border-acento py-1 pl-5 text-2xl font-semibold leading-snug text-tinta">
+                        <p className="border-l-2 border-solid border-tinta py-1 pl-5 text-2xl font-semibold leading-snug text-tinta">
                             {destaque}
                         </p>
                         <p>{fechamento}</p>
@@ -40,7 +40,7 @@ function Sobre() {
                         />
                         <img
                             src={fotoSobre}
-                            alt="Tatuadora responsável pelo estúdio EmiTattoo"
+                            alt="Janderson tatuando um cliente em seu estúdio"
                             className="relative aspect-[3/4] w-full rounded-sm object-cover"
                         />
                     </figure>

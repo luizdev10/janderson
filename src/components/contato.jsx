@@ -2,11 +2,11 @@ import { Clock, MapPin, MessageCircle } from "lucide-react";
 import { SiInstagram } from "@icons-pack/react-simple-icons";
 import { Link } from "react-router-dom";
 import Reveal from "./reveal.jsx";
-import fotoContato from "../assets/img/bg-works-emi.webp";
+import fotoContato from "../assets/img/fotosobre.webp";
 
-const NUMERO_WHATS = "5588997082957";
+const NUMERO_WHATS = "5588998070744";
 const LINK_WHATS_GERAL = `https://wa.me/${NUMERO_WHATS}?text=${encodeURIComponent("Olá! Quero fazer uma tatuagem")}`;
-const ENDERECO = "R. André Cartaxo - Centro, Crato - CE, 63100-172";
+const ENDERECO = "Av. João Alves Rocha - Seminário, Crato - CE, 63113-080";
 const LINK_MAPS = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(ENDERECO)}`;
 const horarios = [
   { dias: "Seg, ter, qua e sex", horas: "10:30–17:00" },
@@ -34,18 +34,18 @@ export default function Contato() {
             </h2>
           </Reveal>
           <p className="mt-6 max-w-sm leading-relaxed text-cinza">
-            Conte sua ideia pelo WhatsApp da EmiTattoo. O orçamento final é combinado na conversa.
+            Conte sua ideia pelo WhatsApp do Janderson. O orçamento final é combinado na conversa.
           </p>
 
           <div className="mt-10 flex flex-col gap-5 text-papel/85">
             <a
-              href="https://www.instagram.com/_emitattoo/"
+              href="https://www.instagram.com/jandersontattooink/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex w-fit items-center gap-3 transition-colors hover:text-papel"
             >
               <SiInstagram className="h-5 w-5 shrink-0 opacity-70" />
-              @_emitattoo
+              @jandersontattooink
             </a>
             <a
               href={LINK_MAPS}
@@ -72,7 +72,7 @@ export default function Contato() {
             href={LINK_WHATS_GERAL}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-10 flex w-fit items-center justify-center gap-2.5 rounded-full bg-acento px-7 py-4 font-medium text-papel shadow-[0_8px_30px_-8px_var(--color-acento)] transition-all duration-500 ease-in-out hover:bg-acento-luz hover:text-tinta"
+            className="mt-10 flex w-fit items-center justify-center gap-2.5 rounded-full bg-acento px-7 py-4 font-medium text-tinta shadow-[0_8px_30px_-8px_var(--color-acento)] transition-all duration-500 ease-in-out hover:scale-[1.04] hover:bg-acento-luz active:scale-95"
           >
             <MessageCircle className="h-5 w-5" strokeWidth={1.5} />
             Pedir orçamento no WhatsApp
@@ -89,7 +89,7 @@ export default function Contato() {
           />
           <img
             src={fotoContato}
-            alt="Tatuadora da EmiTattoo em seu estúdio"
+            alt="Janderson, tatuador especialista em realismo"
             className="relative aspect-[3/4] w-full rounded-sm object-cover object-[center_22%]"
           />
         </figure>
@@ -98,7 +98,7 @@ export default function Contato() {
       <footer className="mx-auto mt-24 max-w-6xl border-t border-white/10 py-14 text-sm text-cinza">
         <div className="grid gap-12 sm:grid-cols-2">
           <div>
-            <p className="font-gotica text-2xl lowercase text-papel">emitattoo</p>
+            <p className="font-gotica text-2xl lowercase text-papel">janderson tattoo</p>
 
             <div className="mt-6 flex items-start gap-3">
               <MapPin className="mt-0.5 h-4 w-4 shrink-0 opacity-70" strokeWidth={1.5} />
@@ -123,14 +123,14 @@ export default function Contato() {
               className="mt-3 flex items-center gap-3 transition-colors hover:text-papel"
             >
               <MessageCircle className="h-4 w-4 shrink-0 opacity-70" strokeWidth={1.5} />
-              (88) 99708-2957
+              (88) 99807-0744
             </a>
 
             <a
-              href="https://www.instagram.com/_emitattoo/"
+              href="https://www.instagram.com/jandersontattooink/"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Instagram da EmiTattoo"
+              aria-label="Instagram do Janderson Tattoo"
               className="mt-6 flex h-9 w-9 items-center justify-center rounded-full border border-white/15 transition-colors hover:border-papel hover:text-papel"
             >
               <SiInstagram className="h-4 w-4" />
@@ -139,7 +139,7 @@ export default function Contato() {
 
           <div>
             <p className="text-papel">Páginas</p>
-            <ul className="mt-6 flex flex-col gap-3">
+            <ul className="mt-6 grid grid-cols-2 gap-x-6 gap-y-3">
               {paginas.map((p) => (
                 <li key={p.href}>
                   <a href={p.href} className="transition-colors hover:text-papel">
@@ -157,7 +157,7 @@ export default function Contato() {
         </div>
 
         <p className="mt-12 border-t border-white/10 pt-6 text-xs text-cinza/70">
-          © {new Date().getFullYear()} EmiTattoo
+          © {new Date().getFullYear()} Janderson Tattoo
         </p>
       </footer>
     </section>

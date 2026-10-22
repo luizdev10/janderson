@@ -1,10 +1,10 @@
-import { CalendarDays, PenTool, Users } from "lucide-react";
+import { Award, MapPin, PenTool } from "lucide-react";
 import Reveal from "./reveal.jsx";
 
 const itens = [
-    { icone: CalendarDays, numero: "Desde 2019", legenda: "tatuando em Crato - CE" },
-    { icone: PenTool, numero: "+300", legenda: "tatuagens e piercings realizados" },
-    { icone: Users, numero: "3.593", legenda: "seguidores no Instagram" },
+    { icone: Award, numero: "Premiado", legenda: "Expo Tattoo Cariri 2025" },
+    { icone: PenTool, numero: "Autorais", legenda: "projetos exclusivos" },
+    { icone: MapPin, numero: "Cariri - CE", legenda: "atendimento em Crato e região" },
 ];
 
 function Credenciais() {

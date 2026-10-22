@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, MessageCircle, X } from "lucide-react";
 import { SiInstagram } from "@icons-pack/react-simple-icons";
-import logo from "../assets/img/logo-emi.webp";
+import logo from "../assets/img/logo1.webp";
 
 const itens = [
     { id: "inicio", label: "Início" },
@@ -11,7 +11,7 @@ const itens = [
     { id: "contato", label: "Contato" },
 ];
 
-const NUMERO_WHATS = "5588997082957";
+const NUMERO_WHATS = "5588998070744";
 const LINK_WHATS = `https://wa.me/${NUMERO_WHATS}?text=${encodeURIComponent("Olá! Quero fazer uma tatuagem")}`;
 
 function NavBar() {
@@ -54,9 +54,12 @@ function NavBar() {
             }`}
         >
             {item.label}
-            {ativo === item.id && (
-                <span className="border-b absolute inset-x-0 -bottom-2 text-acento-luz" />
-            )}
+            <span
+                aria-hidden="true"
+                className={`border-b absolute inset-x-0 -bottom-2 origin-left text-acento-luz transition-transform duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+                    ativo === item.id ? "scale-x-100" : "scale-x-0"
+                }`}
+            />
         </a>
     );
 
@@ -70,11 +73,11 @@ function NavBar() {
                 <a
                     href="#inicio"
                     onClick={(e) => clique(e, "inicio")}
-                    aria-label="EmiTattoo, voltar ao início"
+                    aria-label="Janderson Tattoo, voltar ao início"
                     className="flex h-12 items-center gap-2.5"
                 >
-                    <img src={logo} alt="" aria-hidden="true" className="h-10 w-10 rounded-full object-cover" />
-                    <span className="font-gotica text-xl leading-[0.95] lowercase text-papel">emitattoo</span>
+                    <img src={logo} alt="" aria-hidden="true" className="h-10 w-10 rounded-full bg-papel object-contain p-1" />
+                    <span className="font-gotica text-xl leading-[0.95] lowercase text-papel">janderson tattoo</span>
                 </a>
 
                 <div className="hidden items-center gap-7 lg:flex">
@@ -84,10 +87,10 @@ function NavBar() {
                         ))}
                     </ul>
                     <a
-                        href="https://www.instagram.com/_emitattoo/"
+                        href="https://www.instagram.com/jandersontattooink/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        aria-label="Instagram da EmiTattoo"
+                        aria-label="Instagram do Janderson Tattoo"
                         className="text-cinza transition-colors hover:text-acento-luz"
                     >
                         <SiInstagram className="h-5 w-5" />
@@ -96,7 +99,7 @@ function NavBar() {
                         href={LINK_WHATS}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 rounded-full bg-acento px-5 py-2 text-sm font-medium text-papel transition-colors hover:bg-acento-luz hover:text-tinta"
+                        className="flex items-center gap-2 rounded-full bg-acento px-5 py-2 text-sm font-medium text-tinta transition-all duration-300 hover:scale-105 hover:bg-acento-luz active:scale-95"
                     >
                         <MessageCircle className="h-4 w-4" strokeWidth={1.5} />
                         Pedir orçamento
@@ -123,16 +126,16 @@ function NavBar() {
                             href={LINK_WHATS}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex w-fit items-center gap-2 rounded-full bg-acento px-5 py-2.5 text-base font-medium text-papel transition-colors hover:bg-acento-luz hover:text-tinta"
+                            className="flex w-fit items-center gap-2 rounded-full bg-acento px-5 py-2.5 text-base font-medium text-tinta transition-all duration-300 hover:scale-105 hover:bg-acento-luz active:scale-95"
                         >
                             <MessageCircle className="h-4 w-4" strokeWidth={1.5} />
                             Pedir orçamento
                         </a>
                         <a
-                            href="https://www.instagram.com/_emitattoo/"
+                            href="https://www.instagram.com/jandersontattooink/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            aria-label="Instagram da EmiTattoo"
+                            aria-label="Instagram do Janderson Tattoo"
                             className="text-cinza transition-colors hover:text-acento-luz"
                         >
                             <SiInstagram className="h-5 w-5" />
