@@ -1,4 +1,4 @@
-import fotoHero from "../assets/img/fotoini.webp";
+import fotoHero from "../assets/img/fotoprocesso.webp";
 
 const NUMERO_WHATS = "5588998070744";
 
@@ -16,8 +16,8 @@ function Inicio() {
         <section id="inicio" className="relative flex min-h-[100svh] w-full items-center overflow-hidden bg-tinta pt-16">
             <img
                 src={fotoHero}
-                alt="Janderson, tatuador especialista em realismo"
-                className="absolute inset-0 h-full w-full object-cover object-[center_22%]"
+                alt="Janderson tatuando sob a luz do estúdio"
+                className="absolute inset-0 h-full w-full object-cover object-center"
             />
             <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-tinta via-tinta/65 to-tinta/20" />
             <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-tinta via-transparent to-tinta/50" />
@@ -35,7 +35,7 @@ function Inicio() {
                     </h1>
 
                     <p className="surge surge-1 mx-auto mt-8 max-w-md text-lg leading-relaxed text-papel/80 md:mx-0">
-                        Realismo, fine line e blackwork em projetos autorais exclusivos, em Crato - Região do Cariri.
+                        Realismo, fine line e blackwork em projetos autorais exclusivos, em Crato, Região do Cariri.
                         Premiado na Expo Tattoo Cariri 2025.
                     </p>
 

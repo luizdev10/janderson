@@ -6,7 +6,7 @@ import fotoContato from "../assets/img/fotosobre.webp";
 
 const NUMERO_WHATS = "5588998070744";
 const LINK_WHATS_GERAL = `https://wa.me/${NUMERO_WHATS}?text=${encodeURIComponent("Olá! Quero fazer uma tatuagem")}`;
-const ENDERECO = "Av. João Alves Rocha - Seminário, Crato - CE, 63113-080";
+const ENDERECO = "Av. João Alves Rocha 763, Seminário, Crato, CE, 63113080";
 const LINK_MAPS = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(ENDERECO)}`;
 const horarios = [
   { dias: "Seg, ter, qua e sex", horas: "10:30–17:00" },
@@ -123,7 +123,7 @@ export default function Contato() {
               className="mt-3 flex items-center gap-3 transition-colors hover:text-papel"
             >
               <MessageCircle className="h-4 w-4 shrink-0 opacity-70" strokeWidth={1.5} />
-              (88) 99807-0744
+              (88) 998070744
             </a>
 
             <a

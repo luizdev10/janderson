@@ -1,8 +1,8 @@
-import fotoSobre from "../assets/img/fotoprocesso.webp";
+import fotoSobre from "../assets/img/fotoini.webp";
 import Reveal from "./reveal.jsx";
 
 const paragrafos = [
-    "Janderson é tatuador especialista em realismo, fine line e blackwork, com projetos autorais exclusivos em Crato - Região do Cariri.",
+    "Janderson é tatuador especialista em realismo, fine line e blackwork, com projetos autorais exclusivos em Crato, Região do Cariri.",
     "Premiado na Expo Tattoo Cariri 2025, une técnica apurada a composições pensadas sob medida para cada cliente.",
 ];
 
@@ -40,8 +40,8 @@ function Sobre() {
                         />
                         <img
                             src={fotoSobre}
-                            alt="Janderson tatuando um cliente em seu estúdio"
-                            className="relative aspect-[3/4] w-full rounded-sm object-cover"
+                            alt="Janderson, tatuador especialista em realismo"
+                            className="relative aspect-[3/4] w-full rounded-sm object-cover object-[center_20%]"
                         />
                     </figure>
                 </div>
